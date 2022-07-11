@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap');
 
+/* Обнуление */
 *{padding: 0;margin: 0;border: 0;}
 :before,:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
 :focus,:active{outline: none;}
@@ -16,24 +17,17 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
-html {
-    --black: black;
-    --grey: #828282;
-}
-body {
-    
-}
-
 .center {
     max-width: 945px;
     margin: 0 auto;
-    
 }
-
 .wrapper {
     
     font-family: 'Nunito', sans-serif;
 }
+
+/*-------MENU-------*/
+
 .menu {
     max-width: 945px;
     margin: 0 auto;
@@ -50,7 +44,7 @@ body {
 .line {
     width: 100%;
     height: 1px;
-    background-color:var(--grey);
+    background-color:gray;
 }
 .info {
     margin: 35px 0px;
@@ -79,120 +73,9 @@ body {
 }
 .me {
     margin-bottom: 100px;
+    width: 100%;
+    height: auto;
 }
-.about {
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    color: aliceblue;
-}
-.about__title {
-    font-weight: 700;
-    font-size: 34px;
-    padding-bottom: 50px;
-}
-.about__text p{
-    max-width: 945px;
-    margin: 0 auto;
-    font-size: 18px;
-    padding: 20px;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-/*-------Skills-------*/
-
-.skills {
-    max-width: 945px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-.skills__title {
-    font-weight: 700;
-    font-size: 34px;
-    margin-top: 90px;
-    margin-bottom: 90px;
-    display: flex;
-    justify-content: center;
-}
-.skills__cards {
-    display: flex;
-    justify-content: space-between;
-}
-.skills__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.skills__icon {
-    width: 90px;
-    padding: 20px;
-}
-.skills__p {
-    font-weight: 700;
-    font-size: 20px;
-}
-.skills__stars {
-    padding: 20px 0 90px 0;
-}
-.skills__star {
-}
-
-
-/* =================Contact========================= */
-
-footer {
-    background-color:#F6F6F6;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    height: 500px;
-}
-.contact {
-    font-weight: 700;
-    font-size: 34px;
-    margin-top: 30px;
-    
-}
-.contact__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-display: auto;
-    font-size: 18px;
-    line-height: 20px;
-}
-.contact__text p{
-    
-}
-.social__icons {
-}
-.social__icon {
-    padding: 0 30px;
-    width: 50px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .menu a {
     position: relative;
@@ -225,3 +108,128 @@ footer {
 .menu a:hover::after {
     transform: scale(1, 1);
 }
+
+/*-------ABOUT-------*/
+
+.about {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+}
+.about__title {
+    font-weight: 700;
+    font-size: 34px;
+    padding-bottom: 50px;
+}
+.about__text p{
+    max-width: 945px;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/*-------/ABOUT-------*/
+
+/*-------Skills-------*/
+
+.skills {
+    max-width: 945px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.skills__title {
+    font-weight: 700;
+    font-size: 34px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: center;
+}
+.skills__cards {
+    display: flex;
+    justify-content: space-around;
+}
+.skills__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills__icon {
+    width: 90px;
+    padding: 20px;
+}
+.skills__p {
+    font-weight: 700;
+    font-size: 20px;
+}
+.skills__stars {
+    padding: 20px 0 90px 0;
+}
+/*-------/Skills-------*/
+
+/*-------Contact-------*/
+
+footer {
+    background-color:#F6F6F6;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
+.contact {
+    font-weight: 700;
+    font-size: 34px;
+    margin-top: 30px;
+}
+.contact__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-display: auto;
+    font-size: 18px;
+    line-height: 20px;
+}
+.social__icon {
+    padding: 0 30px;
+    width: 50px;
+}
+
+/*-------/Contact-------*/
+
+
+
+@media (max-width: 575px) {
+    .skills__icon {
+        
+    }
+    .skills__cards {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .skills__icon {
+        width: 90px;
+        padding: 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
