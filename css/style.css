@@ -43,6 +43,9 @@ body {
     margin-bottom: 33px;
 }
 .menu__items {
+    font-weight: 700;
+    font-size: 17px;
+    padding: 8px;
 }
 .line {
     width: 100%;
@@ -57,6 +60,7 @@ body {
     align-items: center;
 }
 .name {
+    font-weight: 700;
     font-size: 47px;
     line-height: 58px;
 }
@@ -78,13 +82,14 @@ body {
 }
 .about {
     height: 500px;
-    background-color:#F6F6F6;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    color: aliceblue;
 }
 .about__title {
+    font-weight: 700;
     font-size: 34px;
     padding-bottom: 50px;
 }
@@ -108,6 +113,7 @@ body {
     flex-direction: column;
 }
 .skills__title {
+    font-weight: 700;
     font-size: 34px;
     margin-top: 90px;
     margin-bottom: 90px;
@@ -128,6 +134,7 @@ body {
     padding: 20px;
 }
 .skills__p {
+    font-weight: 700;
     font-size: 20px;
 }
 .skills__stars {
@@ -148,8 +155,10 @@ footer {
     height: 500px;
 }
 .contact {
+    font-weight: 700;
     font-size: 34px;
     margin-top: 30px;
+    
 }
 .contact__text {
     display: flex;
@@ -167,4 +176,52 @@ footer {
 .social__icon {
     padding: 0 30px;
     width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+.menu a::before,
+.menu a::after {
+    content: '';
+    position: absolute;
+    transition: transform .5s ease;
+    left: -4px;
+    top: 0;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-style: solid;
+    border-color: black;
+    box-sizing: border-box;
+}
+.menu a::before {
+    border-width: 1px 0 1px 0;
+    transform: scaleX(0);
+}
+.menu a::after {
+    border-width: 0 1px 0 1px;
+    transform: scaleY(0);
+}
+.menu a:hover::before,
+.menu a:hover::after {
+    transform: scale(1, 1);
 }
