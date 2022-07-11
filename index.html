@@ -1,12 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="headline">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <header class="center" >
+            <div class="menu">
+                <a href="#headline"><div class="menu__items">Home</div></a>
+                <a href="#about"><div class="menu__items">About me</div></a>
+                <a href="#skills"><div class="menu__items">Skills</div></a>
+                <a href="#footer"><div class="menu__items">Contacts</div></a>
+            </div>
+            <div class="line"></div>
+        </header>
+        <main class="center">
+            <div class="info">
+                <div class="name">
+                    <p>Melyakin</p>
+                    <p>Aleksandr</p>
+                </div>
+                <div class="job_title">
+                    <p>Beginner Front-end Developer</p>
+                    <p>17 years old, Kazakstan</p>
+                </div>
+                <div class="language">
+                    <p>Ru</p>
+                    <p>|</p>
+                    <p>Eng</p>
+                </div>
+            </div>
+            <img src="img/me.svg" alt="" class="me">
+        </main>
+
+
+
+        <div class="about" id="about">
+            <div class="about__title">About me</div>
+            <div class="about__text">
+                <p>Hi, I'm Alexander - a beginner Front-end developer from Kazakhstan. I'm interested in Front-end development and everything connected with it.</p>
+                <p>My full name is Melyakin Alexander Sergeevich, born in 2005. I live in Kazakhstan, the city of Karaganda. I’m a student of Karaganda Polytechnic College. About character. In my free time I usually spend time with friends, study, play computer games, watch movies.</p>
+                <p>Ready to implement excellent projects with wonderful people.</p>
+            </div>
+        </div> 
+
+
+
+        <div class="skills" id="skills">
+            <div class="skills__title">Skills</div>
+            <div class="skills__cards">
+
+                <div class="skills__card">
+                    <img src="img/js.png" alt="" class="skills__icon">
+                    <div class="skills__p">JavaScript</div>
+                    <div class="skills__stars">
+                        <img class="skills__star" src="img/Star.svg" alt="">
+                        <img class="skills__star" src="img/Star.svg" alt="">
+                        <img class="skills__star" src="img/Star.svg" alt="">
+                        <img class="skills__star" src="img/Star_.svg" alt="">
+                        <img class="skills__star" src="img/Star_.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="skills__card">
+                    <img src="img/js.png" alt="" class="skills__icon">
+                    <div class="skills__p">JavaScript</div>
+                    <div class="skills__stars">
+                        <img class="skills__star" src="img/Star.svg" alt="">
+                        <img class="skills__star" src="img/Star.svg" alt="">
+                        <img class="skills__star" src="img/Star.svg" alt="">
+                        <img class="skills__star" src="img/Star_.svg" alt="">
+                        <img class="skills__star" src="img/Star_.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="skills__card">
+                    <img src="img/js.png" alt="" class="skills__icon">
+                    <div class="skills__p">JavaScript</div>
+                    <div class="skills__stars">
+                        <img class="skills__star" src="img/Star.svg" alt="">
+                        <img class="skills__star" src="img/Star.svg" alt="">
+                        <img class="skills__star" src="img/Star.svg" alt="">
+                        <img class="skills__star" src="img/Star_.svg" alt="">
+                        <img class="skills__star" src="img/Star_.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="skills__card">
+                    <img src="img/js.png" alt="" class="skills__icon">
+                    <div class="skills__p">JavaScript</div>
+                    <div class="skills__stars">
+                        <img class="skills__star" src="img/Star.svg" alt="">
+                        <img class="skills__star" src="img/Star.svg" alt="">
+                        <img class="skills__star" src="img/Star.svg" alt="">
+                        <img class="skills__star" src="img/Star_.svg" alt="">
+                        <img class="skills__star" src="img/Star_.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="contact">Contact</div>
+            <div class="contact__text">
+                <p>Want to know more or just chat? </p>
+                <p>You are welcome!</p>
+                </div>
+            <div class="social__icons">
+                <a target="_blank" href="https://github.com/shaft-of-light"><img class="social__icon" src="img/github.png" alt=""></a>
+                <a href=""><img class="social__icon" src="img/instagram.png" alt=""></a>
+                <a href=""><img class="social__icon" src="img/vk.png" alt=""></a>
+                <a href=""><img class="social__icon" src="img/steam.png" alt=""></a>
+            </div>
+            <div class="contact__text">
+                <p>Like me on</p>
+                <p>Github, Instagram, Vk, Steam</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+    <script>
+        VANTA.BIRDS({
+            el: "#about",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            quantity: 4.00
+        })
+        VANTA.CLOUDS({
+          el: "#footer",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          skyColor: 0xcacaca,
+          speed: 0.80
+        })
+    </script>
 </body>
 </html>
