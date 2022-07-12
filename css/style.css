@@ -27,8 +27,22 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 
 /*-------MENU-------*/
+main{
+    padding-top: 100px;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+    
+}
 
 .menu {
+    
     max-width: 945px;
     margin: 0 auto;
     display: flex;
@@ -36,7 +50,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     margin-top: 33px;
     margin-bottom: 33px;
 }
-.menu__items {
+.menu__item {
     font-weight: 700;
     font-size: 17px;
     padding: 8px;
@@ -208,8 +222,34 @@ footer {
 
 
 @media (max-width: 575px) {
-    .skills__icon {
-        
+    /* Текст */
+    .menu__item {
+        font-weight: 700;
+        font-size: 18px;
+        padding: 8px 0;
+    }
+    .about__title {
+        font-weight: 700;
+        font-size: 30px;
+        padding-bottom: 50px;
+    }
+    .about__text p{
+        max-width: 945px;
+        margin: 0 auto;
+        font-size: 15px;
+        padding: 20px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .skills__title {
+        font-weight: 700;
+        font-size: 30px;
+        margin-top: 90px;
+        margin-bottom: 90px;
+        display: flex;
+        justify-content: center;
     }
     .skills__cards {
         flex-wrap: wrap;
@@ -218,12 +258,152 @@ footer {
     }
     .skills__icon {
         width: 90px;
-        padding: 60px;
+        padding: 20px 60px;
+    }
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .name {
+        padding-right: 20px;
+        padding-top: 20px;
+        font-weight: 700;
+        font-size: 37px;
+        line-height: 48px;
+    }
+    .job_title {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .language {
+        display: flex;
+        transform: rotate(270deg);
+        line-height: 12px;
+        font-size: 13px;
+    }
+    .language p {
+        padding: 3px;
+    }
+    .me {
+        margin-bottom: 100px;
+        width: 100%;
+        height: auto;
+    }
+    .contact {
+        font-weight: 700;
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .contact__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-display: auto;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .social__icon {
+        padding: 0 30px;
+        width: 45px;
+    }
+}
+
+@media (max-width: 450px) {
+    
+    .skills__title {
+        font-weight: 700;
+        font-size: 30px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: center;
+    }
+    .skills__cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 40px;
+    }
+    .skills__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills__icon {
+        width: 90px;
+        padding: 20px;
+    }
+    .skills__p {
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .skills__stars {
+        padding: 20px 0 90px 0;
+    }
+    .social__icon {
+        padding: 0 20px;
+        width: 40px;
     }
 }
 
 
+@media (max-width:380px) {
+    .info {
+        flex-wrap: wrap-reverse;
+    }
+    .skills__cards {
+        padding: 10px;
+    }
+}
 
+@media (max-width:320px) {
+    .menu {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .menu__item {
+        font-weight: 700;
+        font-size: 14px;
+        padding: 5px;
+    }
+    .skills__title {
+        font-weight: 700;
+        font-size: 25px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .skills__cards {
+        flex-direction: column;
+    }
+    .skills__stars {
+        padding: 20px 0 40px 0;
+    }
+    .info {
+        margin: 0px 0px 35px 0;
+    }
+    .contact {
+        font-weight: 700;
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    .contact__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-display: auto;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .social__icon {
+        padding: 0 15px;
+        width: 30px;
+    }
+}
 
 
 
