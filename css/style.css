@@ -85,6 +85,9 @@ header {
 .language p {
     padding: 3px;
 }
+.language a {
+    color: black;
+}
 .me {
     margin-bottom: 100px;
     width: 100%;
