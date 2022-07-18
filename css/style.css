@@ -47,8 +47,8 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    margin-top: 33px;
-    margin-bottom: 33px;
+    margin-top: 23px;
+    margin-bottom: 23px;
 }
 .menu__item {
     font-weight: 700;
@@ -315,7 +315,10 @@ footer {
 }
 
 @media (max-width: 450px) {
-    
+    .menu {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
     .skills__title {
         font-weight: 700;
         font-size: 30px;
@@ -364,8 +367,8 @@ footer {
 
 @media (max-width:320px) {
     .menu {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .menu__item {
         font-weight: 700;
